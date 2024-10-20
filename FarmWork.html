@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Work - Vegetable Store</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            width: 100%;
+            height: 150px;
+            background-image: url('FarmWorkBanner.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        
+
+        .header-banner p {
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* Ads Carousel */
+        .ads-carousel {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .ads-track {
+            display: flex;
+            animation: slide-ads 12s linear infinite;
+        }
+
+        .ad-banner {
+            min-width: 100%;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Keyframes for Ads Sliding Animation */
+        @keyframes slide-ads {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Vegetables Section */
+        .vegetables-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .veg-box {
+            background-color: white;
+            width: 300px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .veg-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .veg-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .veg-info h3 {
+            margin: 10px 0;
+        }
+
+        .veg-info p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Banner (Static) -->
+    <div class="header-banner">
+        <div>
+        </div>
+    </div>
+
+    <!-- Ads Carousel (Sliding from Right to Left) -->
+    <div class="ads-carousel">
+        <div class="ads-track">
+            <div class="ad-banner" style="background-image: url('discount1.png');"></div>
+            <div class="ad-banner" style="background-image: url('discount2.png');"></div>
+            <div class="ad-banner" style="background-image: url('https://source.unsplash.com/300x100/?organic');"></div>
+        </div>
+    </div>
+
+    <!-- Vegetables Section -->
+    <div class="vegetables-container">
+        <!-- Vegetable 1 -->
+        <div class="veg-box">
+            <img src="veg1.jpg" alt="Carrot">
+            <div class="veg-info">
+                <h3>Carrot</h3>
+                <p>Rich in Vitamin A. Perfect for soups and salads.</p>
+            </div>
+        </div>
+
+        <!-- Vegetable 2 -->
+        <div class="veg-box">
+            <img src="veg2.jpg" alt="Tomato">
+            <div class="veg-info">
+                <h3>Tomato</h3>
+                <p>Juicy and fresh. Ideal for sauces and salads.</p>
+            </div>
+        </div>
+
+        <!-- Vegetable 3 -->
+        <div class="veg-box">
+            <img src="veg3.jpg" alt="Potato">
+            <div class="veg-info">
+                <h3>Brinjal</h3>
+                <p>Perfect for frying and baking. A staple food.</p>
+            </div>
+        </div>
+
+        <!-- Vegetable 4 -->
+        <div class="veg-box">
+            <img src="BottleGourd.jpg" alt="Broccoli">
+            <div class="veg-info">
+                <h3>Bottle Gourd</h3>
+                <p>Rich in fiber and vitamins. Great for healthy meals.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
